@@ -1,9 +1,11 @@
 # Nehalem Gatsby Theme
 
-![Travis (.org)](https://img.shields.io/travis/nehalist/gatsby-theme-nehalem)
+![Travis (.org)](https://img.shields.io/travis/baronbeans/gatsby-theme-medal)
 
 <p align="center">
-    <img src="https://github.com/nehalist/gatsby-theme-nehalem/blob/master/theme/logo.png?raw=true">
+
+    <img src="https://github.com/baronbeans/gatsby-theme-medal/blob/master/theme/logo.png?raw=true">
+
 </p>
 
 > Check the [Demo](https://nehalem.netlify.com)!
@@ -14,17 +16,17 @@
 
 Out-of-the-box:
 
-- Fully responsive
-- Highly optimized (Lighthouse score ~400)
-- SEO optimized (with open graph, Twitter Card, JSON-LD, RSS and sitemap)
-- Syntax highlighting
-- Search functionality
-- Multi navigations
-- Static pages
-- Fully typed with TypeScript
-- Tagging
-- Theming
-- Customizable
+* Fully responsive
+* Highly optimized (Lighthouse score ~400)
+* SEO optimized (with open graph, Twitter Card, JSON-LD, RSS and sitemap)
+* Syntax highlighting
+* Search functionality
+* Multi navigations
+* Static pages
+* Fully typed with TypeScript
+* Tagging
+* Theming
+* Customizable
 
 See [here](https://nehalem.netlify.com/features) for details!
 
@@ -37,54 +39,72 @@ See [here](https://nehalem.netlify.com/features) for details!
 To use this theme in your Gatsby sites, follow these instructions:
 
 1.  Install the theme
-    ```sh
-    npm install --save @nehalist/gatsby-theme-nehalem
+
+    
+
+``` sh
+    npm install --save @baronbeans/gatsby-theme-medal
     # or
-    yarn add @nehalist/gatsby-theme-nehalem
+    yarn add @baronbeans/gatsby-theme-medal
     ```
 
 2.  Add the theme to your `gatsby-config.js`:
-    ```js
-    module.exports = {
-      plugins: [{
-        resolve: `@nehalist/gatsby-theme-nehalem`,
-        options: { // optional theme options
-        // location to our content
-        contentPath: `content`,
-        // the page manifest
-        manifest: {
-          name: `nehalem - A Gatsby theme`,
-          short_name: `nehalem`,
-          start_url: `/`,
-          background_color: `#a4cbb8`,
-          theme_color: `#a4cbb8`,
-          display: `minimal-ui`,
-          icon: `${__dirname}/assets/nehalist-gatsby.png`
-        },
-        // if archive pages should be generated automatically
-        loadDefaultPages: true,
-        // posts shown on the front page
-        postsPerPage: 5
-        }
-      }]
-    }
-    ```
+
     
+
+``` js
+    module.exports = {
+        plugins: [{
+            resolve: `@baronbeans/gatsby-theme-medal`,
+            options: { // optional theme options
+                // location to our content
+                contentPath: `content`,
+                // the page manifest
+                manifest: {
+                    name: `nehalem - A Gatsby theme`,
+                    short_name: `nehalem`,
+                    start_url: `/`,
+                    background_color: `#a4cbb8`,
+                    theme_color: `#a4cbb8`,
+                    display: `minimal-ui`,
+                    icon: `${__dirname}/assets/nehalist-gatsby.png`
+                },
+                // if archive pages should be generated automatically
+                loadDefaultPages: true,
+                // posts shown on the front page
+                postsPerPage: 5
+            }
+        }]
+    }
+```
+
+    
+
 Before starting your site make sure that the following requirements are fulfilled:
 
 1. Be sure to have a `content` directory within your Gatsby installation
 2. Be sure to have a `tags.yml` file within the `content` directory with _at least_ one tag, e.g.
+
    
-    ```yaml
+
+    
+
+``` yaml
+
     - name: Uncategorized
+
       color: #000
       icon: null
       featured: false
     ```
+
       
+
 3. Be sure for your markdown files to include proper frontmatter content, e.g.:
+
    
-```markdown
+
+``` markdown
 
 ---
 title: "Post title"
@@ -100,21 +120,21 @@ updated: 2019-07-29
 
 Finally you can start your site with
 
-```sh
+``` sh
 gatsby develop
 ```
 
 ## Documentation
 
 The entire documentation can be found on the [Demo](https://nehalem.netlify.com). Alternatively check 
-the [GitHub repository](https://github.com/nehalist/gatsby-theme-nehalem/tree/master/demo/content/posts).
+the [GitHub repository](https://github.com/baronbeans/gatsby-theme-medal/tree/master/demo/content/posts).
 
 ## Like the theme?
 
-Happy to hear that! Feel free to star it on [GitHub](https://github.com/nehalist/gatsby-theme-nehalem)!
+Happy to hear that! Feel free to star it on [GitHub](https://github.com/baronbeans/gatsby-theme-medal)!
 
 ## Author
 
-Developed by [nehalist.io](https://nehalist.io).
+Developed by [seanbarnard.dev](https://seanbarnard.dev).
 
 *Big thanks to my SO for the awesome logo!*

@@ -13,9 +13,9 @@ updated: 2019-07-30
 1. Install the theme via npm or yarn:
 
 ```bash
-npm i @nehalist/gatsby-theme-nehalem --save
+npm i @baronbeans/gatsby-theme-medal --save
 # or
-yarn add @nehalist/gatsby-theme-nehalem
+yarn add @baronbeans/gatsby-theme-medal
 ```
 
 2. Add the theme theme to your `gatsby-config.js`:
@@ -24,7 +24,7 @@ yarn add @nehalist/gatsby-theme-nehalem
 module.exports = {
   plugins: [
     {
-      resolve: `@nehalist/gatsby-theme-nehalem`,
+      resolve: `@baronbeans/gatsby-theme-medal`,
       options: { // optional theme options
         // location to our content
         contentPath: `content`,

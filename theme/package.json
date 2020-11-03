@@ -1,11 +1,10 @@
 {
-  "name": "@nehalist/gatsby-theme-nehalem",
+  "name": "@baronbeans/gatsby-theme-medal",
   "author": {
-    "name": "Kevin Hirczy",
-    "email": "kevin@nehalist.io",
-    "url": "https://nehalist.io"
+    "name": "Sean Barnard",
+    "url": "https://seanbarnard.dev"
   },
-  "version": "1.0.9",
+  "version": "1.0.0",
   "scripts": {
     "lint:ts": "tslint -c ../tslint.json 'theme/src/**/*.{ts,tsx}'",
     "lint:css": "stylelint --config ../.stylelintrc './src/**/*.{ts,tsx}'",
@@ -13,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "repository": "https://github.com/nehalist/gatsby-theme-nehalem"
+    "repository": "https://github.com/baronbeans/gatsby-theme-medal"
   },
   "bugs": {
-    "url": "https://github.com/nehalist/gatsby-theme-nehalem/issues"
+    "url": "https://github.com/baronbeans/gatsby-theme-medal/issues"
   },
   "main": "index.js",
   "license": "MIT",

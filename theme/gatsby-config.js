@@ -47,8 +47,8 @@ module.exports = (themeOptions) => {
       author: {
         name: `nehalem`,
         description: `I'm <strong>nehalem</strong>, a Gatsby theme by 
-        <a href="https://nehalist.io" rel="noopener" target="_blank">nehalist.io</a>. If you like what you see feel free to give a 
-        <a href="https://github.com/nehalist/gatsby-theme-nehalem" rel="noopener" target="_blank">star on GitHub!</a>`,
+        <a href="https://seanbarnard.dev" rel="noopener" target="_blank">seanbarnard.dev</a>. If you like what you see feel free to give a 
+        <a href="https://github.com/baronbeans/gatsby-theme-medal" rel="noopener" target="_blank">star on GitHub!</a>`,
         social: {
           facebook: ``,
           twitter: `https://twitter.com/nehalist`,

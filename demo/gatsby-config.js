@@ -5,5 +5,5 @@
  */
 
 module.exports = {
-  plugins: [`@nehalist/gatsby-theme-nehalem`],
+  plugins: [`@baronbeans/gatsby-theme-medal`],
 };

@@ -20,7 +20,7 @@ jobs:
       - name: install, lint, build
         run: |
           yarn install --pure-lockfile
-          yarn workspace @nehalist/gatsby-theme-nehalem lint
+          yarn workspace @baronbeans/gatsby-theme-medal lint
           yarn workspace demo build
         env:
           CI: true

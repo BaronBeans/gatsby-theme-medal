@@ -1,7 +1,7 @@
 import React, {FunctionComponent} from "react";
 import styled from "styled-components";
-import Bio from "@nehalist/gatsby-theme-nehalem/src/components/bio";
-import Theme from "@nehalist/gatsby-theme-nehalem/src/styles/theme";
+import Bio from "@baronbeans/gatsby-theme-medal/src/components/bio";
+import Theme from "@baronbeans/gatsby-theme-medal/src/styles/theme";
 import Carbon from "react-carbon";
 import AdStyle from "./style";
 
