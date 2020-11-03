@@ -1,1 +1,1 @@
-# Theme for [mindovermedal](https://mindoevermedal.com)
+# Theme for [mindovermedal](https://mindovermedal.com)

@@ -1,7 +1,6 @@
 {
   "private": true,
   "workspaces": [
-    "theme",
-    "demo"
+    "theme"
   ]
 }
