@@ -1,9 +1,9 @@
 module.exports = (themeOptions) => {
   const loadDefaultPages = themeOptions.loadDefaultPages !== undefined ? themeOptions.loadDefaultPages : true;
-  const contentPath      = themeOptions.contentPath || 'content';
-  const manifest         = themeOptions.manifest ? themeOptions.manifest : {
-    name: `nehalem - A Gatsby theme`,
-    short_name: `nehalem`,
+  const contentPath = themeOptions.contentPath || 'content';
+  const manifest = themeOptions.manifest ? themeOptions.manifest : {
+    name: `Abbie Williams`,
+    short_name: `mindovermedal.com`,
     start_url: `/`,
     background_color: `#a4cbb8`,
     theme_color: `#a4cbb8`,
@@ -13,31 +13,17 @@ module.exports = (themeOptions) => {
 
   return {
     siteMetadata: {
-      title: `nehalem`,
-      siteUrl: `https://nehalem.netlify.com`,
-      description: `A Gatsby theme for %TOPICS%`,
-      topics: [
-        `bloggers`,
-        `geeks`,
-        `nerds`,
-        `people`,
-        `everyone`
-      ],
+      title: `Abbie Williams - Sports Psychologist`,
+      siteUrl: `https://mindovermedal.com`,
+      description: `Mind Over Medal`,
+      topics: [],
       menu: [
         {
           name: 'Home',
           path: '/'
         },
-        {
-          name: 'Example',
-          path: '/page'
-        },
       ],
       footerMenu: [
-        {
-          name: 'RSS',
-          path: '/rss.xml'
-        },
         {
           name: 'Sitemap',
           path: '/sitemap.xml'
@@ -45,17 +31,15 @@ module.exports = (themeOptions) => {
       ],
       search: true,
       author: {
-        name: `nehalem`,
-        description: `I'm <strong>nehalem</strong>, a Gatsby theme by 
-        <a href="https://seanbarnard.dev" rel="noopener" target="_blank">seanbarnard.dev</a>. If you like what you see feel free to give a 
-        <a href="https://github.com/nehalist/gatsby-theme-nehalem" rel="noopener" target="_blank">star on GitHub!</a>`,
+        name: `Abbie Williams`,
+        description: `First Class Hons in Sport Psychology | Psychology Conversion (PGDip) & MSc Sport Psychology`,
         social: {
-          facebook: ``,
-          twitter: `https://twitter.com/nehalist`,
-          linkedin: `https://www.linkedin.com/in/kevin-hirczy-7a9377106/`,
+          facebook: `https://www.facebook.com/abbie.williams.714`,
+          twitter: `https://twitter.com/abbiegwilliams`,
+          linkedin: ``,
           instagram: ``,
           youtube: ``,
-          github: `https://github.com/nehalist`,
+          github: `https://github.com/baronbeans`,
           twitch: ``
         }
       }

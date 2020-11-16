@@ -4,11 +4,12 @@
     "name": "Sean Barnard",
     "url": "https://seanbarnard.dev"
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "scripts": {
     "lint:ts": "tslint -c ../tslint.json 'theme/src/**/*.{ts,tsx}'",
     "lint:css": "stylelint --config ../.stylelintrc './src/**/*.{ts,tsx}'",
-    "lint": "yarn run lint:ts && yarn run lint:css"
+    "lint": "yarn run lint:ts && yarn run lint:css",
+    "publish": "npm version minor && npm publish"
   },
   "repository": {
     "type": "git",
