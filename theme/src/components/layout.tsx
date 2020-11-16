@@ -18,7 +18,6 @@ const Layout: FunctionComponent<LayoutProps> = ({children, bigHeader = true}) =>
         siteMetadata {
           title
           description
-          topics
           menu {
             name
             path
@@ -40,7 +39,6 @@ const Layout: FunctionComponent<LayoutProps> = ({children, bigHeader = true}) =>
         <Header
           title={data.site.siteMetadata.title}
           description={data.site.siteMetadata.description}
-          topics={data.site.siteMetadata.topics}
           menu={data.site.siteMetadata.menu}
           search={data.site.siteMetadata.search}
         />

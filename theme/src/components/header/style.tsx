@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Theme from "../../styles/theme";
-import Typed from 'react-typed';
+import styled from "styled-components"
+import Theme from "../../styles/theme"
+import Typed from "react-typed"
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -12,7 +12,7 @@ export const StyledHeader = styled.header`
   @media (max-width: ${Theme.breakpoints.sm}) {
     height: 30vh;
   }
-`;
+`
 
 export const TitleWrapper = styled.div`
   display: flex;
@@ -23,24 +23,20 @@ export const TitleWrapper = styled.div`
 
   @media (max-width: ${Theme.breakpoints.sm}) {
     margin-top: -50px;
-    font-size: .75em;
+    font-size: 0.75em;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
   }
-`;
+`
 
 export const Title = styled.h1`
   display: block;
   color: #fff;
-  text-shadow: 0 5px 18px rgba(0, 0, 0, .07);
-`;
+  text-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+`
 
 export const Description = styled.h2`
   margin: 0;
-  opacity: .85;
-`;
-
-export const StyledTopics = styled(Typed)`
-  border-bottom: 3px #000 solid;
-`;
+  opacity: 0.85;
+`

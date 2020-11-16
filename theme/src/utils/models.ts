@@ -4,7 +4,6 @@ export interface SiteMetadata {
       title: string;
       siteUrl: string;
       description: string;
-      topics: string[];
       menu: MenuItem[];
       footerMenu: MenuItem[];
       search: boolean;

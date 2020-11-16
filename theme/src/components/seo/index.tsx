@@ -1,42 +1,41 @@
-import React, {FunctionComponent} from "react";
-import Helmet from 'react-helmet';
-import {graphql, useStaticQuery} from "gatsby";
-import {SiteMetadata} from "../../utils/models";
-import url from "url";
+import React, { FunctionComponent } from "react"
+import Helmet from "react-helmet"
+import { graphql, useStaticQuery } from "gatsby"
+import { SiteMetadata } from "../../utils/models"
+import url from "url"
 
 interface SEOProps {
-  title?: string;
-  lang?: string;
-  description?: string;
-  location: Location;
-  publishedAt?: string;
-  updatedAt?: string;
-  isArticle?: boolean;
-  tags?: string[];
-  type?: 'WebSite' | 'Series' | 'Article';
-  image?: string;
+  title?: string
+  lang?: string
+  description?: string
+  location: Location
+  publishedAt?: string
+  updatedAt?: string
+  isArticle?: boolean
+  tags?: string[]
+  type?: "WebSite" | "Series" | "Article"
+  image?: string
 }
 
 const SEO: FunctionComponent<SEOProps> = ({
-                                            title,
-                                            description,
-                                            lang = 'en',
-                                            location,
-                                            publishedAt,
-                                            updatedAt,
-                                            isArticle = false,
-                                            tags = [],
-                                            type = `Article`,
-                                            image,
-                                          }) => {
-  const {site}          = useStaticQuery<SiteMetadata>(graphql`
+  title,
+  description,
+  lang = "en",
+  location,
+  publishedAt,
+  updatedAt,
+  isArticle = false,
+  tags = [],
+  type = `Article`,
+  image,
+}) => {
+  const { site } = useStaticQuery<SiteMetadata>(graphql`
     query {
       site {
         siteMetadata {
           title
           siteUrl
           description
-          topics
           author {
             name
             description
@@ -48,18 +47,16 @@ const SEO: FunctionComponent<SEOProps> = ({
         }
       }
     }
-  `);
-  const metadata        = site.siteMetadata;
-  const siteTitle       = title ? `${title} - ${metadata.title}` : metadata.title;
-  const metaDescription = description
-    ? description
-    : metadata.description.replace("%TOPICS%", metadata.topics.join(", "));
-  const metaImage       = image ? `${metadata.siteUrl}${image}` : null;
-  const canonical       = url.resolve(metadata.siteUrl, location.pathname);
+  `)
+  const metadata = site.siteMetadata
+  const siteTitle = title ? `${title} - ${metadata.title}` : metadata.title
+  const metaDescription = description || ""
+  const metaImage = image ? `${metadata.siteUrl}${image}` : null
+  const canonical = url.resolve(metadata.siteUrl, location.pathname)
 
   return (
     <Helmet
-      htmlAttributes={{lang}}
+      htmlAttributes={{ lang }}
       title={siteTitle}
       meta={[
         {
@@ -106,36 +103,48 @@ const SEO: FunctionComponent<SEOProps> = ({
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          name: `keywords`,
-          content: metadata.topics.concat(tags).join(', '),
-        },
-      ]
-        .concat(
-          publishedAt ? [{
-            name: `article:published_time`,
-            content: publishedAt,
-          }] : [],
-          updatedAt ? [{
-            name: `article:modified_time`,
-            content: updatedAt,
-          }] : [],
-          tags.length > 0 ? [{
-            name: `twitter:label2`,
-            content: `Filed under`,
-          }, {
-            name: `twitter:data2`,
-            content: tags[0],
-          }] : [],
-          metaImage ? [{
-            property: `og:image`,
-            content: metaImage,
-          }, {
-            name: `twitter:image`,
-            content: metaImage,
-          }] : [],
-        )
-      }
+      ].concat(
+        publishedAt
+          ? [
+              {
+                name: `article:published_time`,
+                content: publishedAt,
+              },
+            ]
+          : [],
+        updatedAt
+          ? [
+              {
+                name: `article:modified_time`,
+                content: updatedAt,
+              },
+            ]
+          : [],
+        tags.length > 0
+          ? [
+              {
+                name: `twitter:label2`,
+                content: `Filed under`,
+              },
+              {
+                name: `twitter:data2`,
+                content: tags[0],
+              },
+            ]
+          : [],
+        metaImage
+          ? [
+              {
+                property: `og:image`,
+                content: metaImage,
+              },
+              {
+                name: `twitter:image`,
+                content: metaImage,
+              },
+            ]
+          : []
+      )}
     >
       <script type={`application/ld+json`}>{`
         {
@@ -150,12 +159,16 @@ const SEO: FunctionComponent<SEOProps> = ({
           "url": "${canonical}",
           ${publishedAt ? `"datePublished": "${publishedAt}",` : ``}
           ${updatedAt ? `"dateModified": "${updatedAt}",` : ``}
-          ${metaImage ? `"image": {
+          ${
+            metaImage
+              ? `"image": {
             "@type": "ImageObject",
             "url": "${metaImage}",
             "width": "1000",
             "height": "520"
-          },` : ``}
+          },`
+              : ``
+          }
           "publisher": {
             "@type": "Organization",
             "name": "${metadata.title}"
@@ -168,7 +181,7 @@ const SEO: FunctionComponent<SEOProps> = ({
         }
       `}</script>
     </Helmet>
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO

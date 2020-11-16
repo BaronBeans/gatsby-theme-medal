@@ -16,7 +16,6 @@ module.exports = (themeOptions) => {
       title: `Abbie Williams - Sports Psychologist`,
       siteUrl: `https://mindovermedal.com`,
       description: `Mind Over Medal`,
-      topics: [],
       menu: [
         {
           name: 'Home',
