@@ -13,9 +13,9 @@ module.exports = (themeOptions) => {
 
   return {
     siteMetadata: {
-      title: `Abbie Williams - Sports Psychologist`,
+      title: `Abbie Williams`,
       siteUrl: `https://mindovermedal.com`,
-      description: `Mind Over Medal`,
+      description: `MSc Sport Psychology student`,
       menu: [
         {
           name: 'Home',
@@ -35,8 +35,8 @@ module.exports = (themeOptions) => {
         social: {
           facebook: `https://www.facebook.com/abbie.williams.714`,
           twitter: `https://twitter.com/abbiegwilliams`,
-          linkedin: ``,
-          instagram: ``,
+          linkedin: `https://www.linkedin.com/in/abbie-williams-3794ba150/`,
+          instagram: `https://www.instagram.com/abbiewilliamssportpsych`,
           youtube: ``,
           github: `https://github.com/baronbeans`,
           twitch: ``

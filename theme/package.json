@@ -4,7 +4,7 @@
     "name": "Sean Barnard",
     "url": "https://seanbarnard.dev"
   },
-  "version": "1.34.0",
+  "version": "1.36.0",
   "scripts": {
     "lint:ts": "tslint -c ../tslint.json 'theme/src/**/*.{ts,tsx}'",
     "lint:css": "stylelint --config ../.stylelintrc './src/**/*.{ts,tsx}'",
