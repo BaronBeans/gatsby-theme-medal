@@ -67,7 +67,7 @@ To use this theme in your Gatsby sites, follow these instructions:
                     background_color: `#a4cbb8`,
                     theme_color: `#a4cbb8`,
                     display: `minimal-ui`,
-                    icon: `${__dirname}/assets/nehalist-gatsby.png`
+                    icon: `${__dirname}/assets/medal-gatsby.png`
                 },
                 // if archive pages should be generated automatically
                 loadDefaultPages: true,
