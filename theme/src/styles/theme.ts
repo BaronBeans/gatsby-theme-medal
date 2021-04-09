@@ -1,4 +1,5 @@
 import { DefaultTheme } from "./default-theme"
+import background from "../../assets/background.png"
 
 const Theme: DefaultTheme = {
   layout: {
@@ -25,7 +26,7 @@ const Theme: DefaultTheme = {
     header: {
       height: `440px`,
       // background: `linear-gradient(-45deg, #44596e, #a4cbb8) repeat scroll 0 0 transparent`,
-      background: `url(../assets/background.png)`,
+      background: `url(${background})`,
     },
   },
 }
