@@ -51,7 +51,7 @@ const PageTemplate: FunctionComponent<PageTemplateProps> = ({
 
   return (
     <Layout bigHeader={false}>
-      <logo />
+      <img src="" alt="Abbie Williams" />
       <h1>Mind Over Medal</h1>
       <SEO
         title={page.frontmatter.title}

@@ -1,22 +1,25 @@
-import React, {FunctionComponent} from "react";
-import styled from "styled-components";
-import {Container} from "../common";
+import React, { FunctionComponent } from "react"
+import styled from "styled-components"
+import { Container } from "../common"
 
 interface SubheaderProps {
-  title: string;
-  subtitle?: string;
-  backgroundColor?: string;
-  textColor?: string;
+  title: string
+  subtitle?: string
+  backgroundColor?: string
+  textColor?: string
 }
 
-const StyledSubheader = styled.div<Pick<SubheaderProps, 'backgroundColor' | 'textColor'>>`
-  background-color: ${props => props.backgroundColor ? props.backgroundColor : '#000'};
-  color: ${props => props.textColor ? props.textColor : '#fff'};
+const StyledSubheader = styled.div<
+  Pick<SubheaderProps, "backgroundColor" | "textColor">
+>`
+  background-color: ${(props) =>
+    props.backgroundColor ? props.backgroundColor : "#000"};
+  color: ${(props) => (props.textColor ? props.textColor : "#555555")};
   display: flex;
   align-items: center;
   height: 90px;
   margin-bottom: 30px;
-`;
+`
 
 const SubheaderTitle = styled.h1`
   font-size: 1.2em;
@@ -24,15 +27,20 @@ const SubheaderTitle = styled.h1`
   color: #fff;
   margin: 0;
   line-height: 1em;
-`;
+`
 
 const SubheaderSubtitle = styled.small`
   font-weight: normal;
   display: block;
-  opacity: .9;
-`;
+  opacity: 0.9;
+`
 
-const Subheader: FunctionComponent<SubheaderProps> = ({title, subtitle, backgroundColor, textColor}) => (
+const Subheader: FunctionComponent<SubheaderProps> = ({
+  title,
+  subtitle,
+  backgroundColor,
+  textColor,
+}) => (
   <StyledSubheader backgroundColor={backgroundColor} textColor={textColor}>
     <Container>
       <SubheaderTitle>
@@ -41,6 +49,6 @@ const Subheader: FunctionComponent<SubheaderProps> = ({title, subtitle, backgrou
       </SubheaderTitle>
     </Container>
   </StyledSubheader>
-);
+)
 
-export default Subheader;
+export default Subheader
